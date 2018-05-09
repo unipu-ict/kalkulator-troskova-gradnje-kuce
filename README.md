@@ -3,6 +3,7 @@ Mobilna aplikacija za procjenu troškova materijala, radova i dozvola u izgradnj
 
 ### Autori (2017./2018.)
 - **Vinković	Goran** (gvinkovic@unipu.hr)
+- **Šajina Romeo** (rsajina@unipu.hr)
 
 ### Organizacija
 [Sveučilište Jurja Dobrile u Puli](http://www.unipu.hr/)   
