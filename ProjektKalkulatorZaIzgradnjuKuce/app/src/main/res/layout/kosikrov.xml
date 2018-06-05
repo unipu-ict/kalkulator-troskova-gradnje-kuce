@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.KosiKrovFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/editText38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#6200EE"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="KOSI KROV"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editText39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText38"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Kosi krov se sastoji od: Drvene konstrukcije, daske, paropropusne, vodonepropusne folije, letva i kontraletva te crijep."
+            android:visibility="visible"
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/KosiKrovKvadratura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText39"
+            android:layout_marginEnd="31dp"
+            android:layout_toStartOf="@+id/KosiKrovZZSw"
+            android:ems="10"
+            android:hint="Unesite kvadraturu"
+            android:inputType="number"
+            android:textColorHint="#000000"/>
+
+        <Switch
+            android:id="@+id/KosiKrovZZSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/KosiKrovKvadratura"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:switchPadding="5dp"
+            android:text="Zabatni zid" />
+
+        <TextView
+            android:id="@+id/editText41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/KosiKrovKvadratura"
+            android:layout_below="@+id/KosiKrovKvadratura"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Visina nadozida (cm)" />
+
+        <SeekBar
+            android:id="@+id/KosiKrovVisNZidBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText41"
+            android:layout_centerHorizontal="true"
+            android:max="150"
+            android:progress="10" />
+
+        <TextView
+            android:id="@+id/editText42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText41"
+            android:layout_below="@+id/KosiKrovVisNZidBar"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Dimnjaci" />
+
+        <SeekBar
+            android:id="@+id/KosiKrovDimnjaciBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText42"
+            android:layout_centerHorizontal="true"
+            android:max="5"
+            android:progress="1" />
+
+    </RelativeLayout>
+</LinearLayout>
+</FrameLayout>

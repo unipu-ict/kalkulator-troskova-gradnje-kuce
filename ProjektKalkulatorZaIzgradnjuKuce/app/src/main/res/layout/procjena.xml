@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".view.fragment.ProcjenaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PODRUM"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#6200EE" />
+
+                <TextView
+                    android:id="@+id/TotalPodrum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PodrumTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PODRUM DODACI"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#6200EE"/>
+
+                <TextView
+                    android:id="@+id/TotalDrenaža"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DrenažaTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalIskop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IskopTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalHidroizolacija"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HidroizolacijaTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEMELJ"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#6200EE"/>
+
+                <TextView
+                    android:id="@+id/TotalVisinaNadtemelja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VisinaNadtemeljaTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalNagibTerena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NagibTerenaTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalTemelj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TemeljTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PRIZEMLJE"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#6200EE"/>
+
+                <TextView
+                    android:id="@+id/TotalPrizPorobeton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PorobetonTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalPrizemljePregradniZidovi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PregradniZidoviTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalPrizmljeDimnjak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DimnjakTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalPrizemlje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PrizemljeTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KAT"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#6200EE"/>
+
+                <TextView
+                    android:id="@+id/TotalKatPorobeton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PorobetonTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalKatPregradniZidovi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PregradniZidoviTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalKatDimnjak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DimnjakTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/TotalKat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KatTotal"
+                    android:textSize="15sp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

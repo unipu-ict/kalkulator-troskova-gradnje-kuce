@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.PodrumDodaciFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/editText45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#6200EE"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="PODRUM dodatne opcije"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editText47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText45"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Zbog što točnijeg izračuna molimo unesite tražene dimenzije."
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:id="@+id/PodrumDodDrenSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText47"
+            android:layout_marginTop="17dp"
+            android:text="Drenaža" />
+
+        <Switch
+            android:id="@+id/PodrumDodIskSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/PodrumDodDužina"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/PodrumDodDrenSw"
+            android:text="Iskop" />
+
+        <Switch
+            android:id="@+id/PodrumDodHidrSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/PodrumDodDužina"
+            android:layout_alignParentEnd="true"
+            android:text="Hidroizolacija" />
+
+        <EditText
+            android:id="@+id/PodrumDodDužina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PodrumDodDrenSw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:ems="10"
+            android:hint="Dužina"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#000000"/>
+
+        <EditText
+            android:id="@+id/PodrumDodŠirina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/PodrumDodDužina"
+            android:layout_below="@+id/PodrumDodDužina"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Širina"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#000000"/>
+
+        <EditText
+            android:id="@+id/PodrumDodDubina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/PodrumDodŠirina"
+            android:layout_below="@+id/PodrumDodŠirina"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="Dubina"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#000000"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</FrameLayout>

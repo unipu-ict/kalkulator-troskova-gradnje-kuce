@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.PodrumFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/PodrumTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Podrum"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#6200EE" />
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Podrum je kompletan od betona, zidovi d=25cm, uključivo armatura, oplata, temeljna ploča d=40, stropna ploča od betona d=16 cm, visina podruma 3m."
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/PodrumKvadratura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="m2"
+            android:ems="10"
+            android:hint="Unesi kvadraturu"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#000000"/>
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="NAPOMENA: Preskočite ako Vam ne treba podrum."
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textAlignment="center"/>
+
+
+</LinearLayout>
+</FrameLayout>

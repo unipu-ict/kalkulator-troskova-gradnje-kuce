@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.KrovFragment">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/editText27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#6200EE"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="KROV"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editText28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText27"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Izaberite samo jednu mogućnost."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            />
+
+        <Switch
+            android:id="@+id/KrovRavniSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText28"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="131dp"
+            android:switchPadding="5dp"
+            android:text="Ravni krov" />
+
+        <Switch
+            android:id="@+id/KrovKosiSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/KrovRavniSwitch"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="46dp"
+            android:switchPadding="5dp"
+            android:text="Kosi krov" />
+
+    </RelativeLayout>
+</LinearLayout>
+</FrameLayout>

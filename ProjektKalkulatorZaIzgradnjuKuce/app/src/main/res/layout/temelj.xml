@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.TemeljFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#6200EE"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="TEMELJI"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Temelji su armirano betonski s uključenom armaturom i iskopom. Dubine 80cm, širine 60cm. Molimo u površinu uključite sve terase prizemlja.  "
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/TemeljKvadratura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText3"
+            android:ems="10"
+            android:hint="Unesi kvadraturu"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#000000"/>
+
+        <SeekBar
+            android:id="@+id/TemeljNagibTerBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText7"
+            android:layout_marginTop="71dp"
+            android:max="64"
+            android:progress="4" />
+
+        <SeekBar
+            android:id="@+id/TemeljVisNadTemBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TemeljKvadratura"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:max="140"
+            android:progress="20" />
+
+        <TextView
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TemeljVisNadTemBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Visina nadtemelja"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TemeljNagibTerBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nagib terena"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</FrameLayout>

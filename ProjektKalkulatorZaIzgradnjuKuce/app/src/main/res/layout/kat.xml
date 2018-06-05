@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.KatFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/editText20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#6200EE"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="KAT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editText21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText20"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Kat je zidan s ciglom 25x19x19, visina 3m, uključivo stropna betonska ploča d016 cm. Upišite samo bruto površinu zatvorenog prostora, bez terasa i balkona. Preskičite ako Vam ne treba."
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/KatKvadratura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText21"
+            android:layout_marginEnd="22dp"
+            android:layout_toStartOf="@+id/KatPBSw"
+            android:ems="10"
+            android:hint="Unesite kvadraturu"
+            android:inputType="number"
+            android:textColorHint="#000000"/>
+
+        <Switch
+            android:id="@+id/KatPBSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/KatKvadratura"
+            android:switchPadding="5dp"
+            android:text="Porobeton (siporex)" />
+
+        <Switch
+            android:id="@+id/KatDrugiKatSW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/KatPBSw"
+            android:layout_below="@+id/KatKvadratura"
+            android:text="Drugi kat" />
+
+        <TextView
+            android:id="@+id/editText23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Pregradni zidovi (m)"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/KatPregZidSeekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/KatDrugiKatSW"
+            android:layout_below="@+id/editText23"
+            android:max="50"
+            android:progress="10" />
+
+        <TextView
+            android:id="@+id/editText24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KatPregZidSeekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Dimnjak (kom)"
+            android:textAlignment="center"
+            />
+
+        <SeekBar
+            android:id="@+id/KatDimnjakSeekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/KatDrugiKatSW"
+            android:layout_below="@+id/editText24"
+            android:max="5"
+            android:progress="1"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+
+</FrameLayout>
